@@ -7,7 +7,8 @@ module Sensu
     # The Sensu JSON parser abstraction API.
     class << self
       # Set up the JSON parser. This method must be called before any
-      # attempt to use the parser. The appropriate JSON parser will be
+      # attempt to use the parser. This method is currently called at
+      # the bottom of this file. The appropriate JSON parser will be
       # loaded for the current platform.
       #
       # @return [Object] parser.
@@ -44,3 +45,5 @@ module Sensu
     end
   end
 end
+
+Sensu::JSON.setup!
