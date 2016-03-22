@@ -1,11 +1,8 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'sensu/json/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "sensu-json"
-  spec.version       = Sensu::Json::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Sean Porter"]
   spec.email         = ["portertech@gmail.com"]
 
