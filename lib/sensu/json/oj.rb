@@ -2,6 +2,8 @@ gem "oj", "2.14.6"
 
 require "oj"
 
+Oj.default_options = {:mode => :compat}
+
 module Sensu
   module JSON
     # The Sensu JSON parser when running on MRI.
