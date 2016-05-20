@@ -1,15 +1,15 @@
-require "json"
+require "jrjackson"
 
 module Sensu
   module JSON
     # The Sensu JSON parser when running on JRuby.
-    class Java
+    class JrJackson
       # Load (and parse) a JSON string. Sensu expects symbolized keys.
       #
       # @param string [String]
       # @return [Object]
       def load(string)
-        ::JSON.parse(string, :symbolize_names => true)
+        ::JrJackson::Json.load(string, :symbolize_keys => true, :raw => true)
       end
 
       # Dump (generate) a JSON string from a Ruby object.
@@ -17,11 +17,7 @@ module Sensu
       # @param object [Object]
       # @param options [Hash]
       def dump(object, options={})
-        if options[:pretty]
-          ::JSON.pretty_generate(object)
-        else
-          ::JSON.fast_generate(object)
-        end
+        ::JrJackson::Json.dump(object, options)
       end
     end
   end

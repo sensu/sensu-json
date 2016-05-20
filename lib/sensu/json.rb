@@ -15,8 +15,8 @@ module Sensu
       def setup!
         @@parser = case
         when RUBY_PLATFORM =~ /java/
-          require "sensu/json/java"
-          Sensu::JSON::Java.new
+          require "sensu/json/jrjackson"
+          Sensu::JSON::JrJackson.new
         else
           require "sensu/json/oj"
           Sensu::JSON::Oj.new
