@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "sensu-json"
-  spec.version       = "2.0.0"
+  spec.version       = "2.0.1"
   spec.platform      = RUBY_PLATFORM =~ /java/ ? Gem::Platform::JAVA : Gem::Platform::RUBY
   spec.authors       = ["Sean Porter"]
   spec.email         = ["portertech@gmail.com"]
