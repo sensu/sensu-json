@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   if RUBY_PLATFORM =~ /java/
     spec.add_dependency("jrjackson", "0.4.0")
   else
-    spec.add_dependency("oj", "2.14.6")
+    spec.add_dependency("oj", "2.18.1")
   end
 
   spec.add_development_dependency "bundler", "~> 1.6"
