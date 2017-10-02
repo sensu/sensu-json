@@ -25,6 +25,7 @@ found [here](http://rubydoc.info/github/sensu/sensu-json/Sensu/JSON).
 Please do not submit a pull request to add features that Sensu does
 not nor will not require.
 
+0. By contributing to this project you agree to abide by the [code of conduct](https://sensuapp.org/conduct).
 1. [Fork it](https://github.com/sensu/sensu-json/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
