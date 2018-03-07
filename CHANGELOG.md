@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/sensu/sensu-json/tree/HEAD)
-
-[Full Changelog](https://github.com/sensu/sensu-json/compare/v2.1.0...HEAD)
+## [v2.1.1](https://github.com/sensu/sensu-json/tree/v2.1.1) (2018-03-07)
+[Full Changelog](https://github.com/sensu/sensu-json/compare/v2.1.0...v2.1.1)
 
 **Merged pull requests:**
 
