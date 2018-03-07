@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.version       = "2.1.0"
   spec.platform      = RUBY_PLATFORM =~ /java/ ? Gem::Platform::JAVA : Gem::Platform::RUBY
   spec.authors       = ["Sean Porter"]
-  spec.email         = ["portertech@gmail.com"]
+  spec.email         = ["portertech@gmail.com", "engineering@sensu.io"]
   spec.summary       = "The Sensu JSON parser abstraction library"
   spec.description   = "The Sensu JSON parser abstraction library"
   spec.homepage      = "https://github.com/sensu/sensu-json"
@@ -25,4 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
+
+  spec.cert_chain    = ["certs/sensu.pem"]
+  spec.signing_key   = File.expand_path("~/.ssh/gem-sensu-private_key.pem") if $0 =~ /gem\z/
 end
