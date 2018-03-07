@@ -6,6 +6,8 @@
 
 **Merged pull requests:**
 
+- Sign the sensu-json Ruby gem [\#6](https://github.com/sensu/sensu-json/pull/6) ([portertech](https://github.com/portertech))
+- Implement automated changelog generation [\#5](https://github.com/sensu/sensu-json/pull/5) ([cwjohnston](https://github.com/cwjohnston))
 - Add ruby 2.4.0 to .travis.yml [\#4](https://github.com/sensu/sensu-json/pull/4) ([amdprophet](https://github.com/amdprophet))
 
 ## [v2.1.0](https://github.com/sensu/sensu-json/tree/v2.1.0) (2017-03-02)
